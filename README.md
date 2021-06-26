@@ -44,12 +44,17 @@ docker pull postgres:10
 docker-compose -f compose.yml up -d
 ```
 
-## 3. Crear Base de Datos
+## 3. Crear Base de Datos y Usuario
 Conectar al servicio de PostgreSQL iniciado en el paso 2 y ejecutar el
 script **init.sql** para crear la base de datos, su usuario y conceder privilegios.
 
 
-## 4. Detener Servicio
+## 4. Eliminar Usuario y Base de Datos
+Si es necesario, conectar al servicio de PostgreSQL iniciado en el paso 2 y ejecutar el
+script **drop.sql** para revocar privilegios y eliminar el usuario y base de datos creados en el paso 3. 
+
+
+## 5. Detener Servicio
 Cuando sea necesario, ejecutar el siguiente comando para detener el servicio de PostgreSQL.
 ```shell
 docker-compose -f compose.yml down
