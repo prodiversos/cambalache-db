@@ -10,4 +10,5 @@ project.lock.json
 .vs/
 
 compose.yml
+drop.sql
 init.sql
