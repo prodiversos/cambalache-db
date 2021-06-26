@@ -1,0 +1,13 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+**/.DS_Store
+*.pyc
+
+.idea/
+.vscode/
+.vs/
+
+compose.yml
+init.sql

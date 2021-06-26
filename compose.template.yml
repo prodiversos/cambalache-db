@@ -1,0 +1,16 @@
+version: "3.7"
+
+volumes:
+  data:
+
+services:
+  cambalache-db:
+    container_name: "cambalache-db"
+    image: postgres:10
+    environment:
+      POSTGRES_PASSWORD: pgSecr3t
+    ports:
+      - "5432:5432"
+    volumes:
+      - "data:/var/lib/postgresql/data"
+    restart: on-failure
