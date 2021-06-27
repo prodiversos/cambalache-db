@@ -11,27 +11,16 @@ Ejecutar los siguientes comandos para preparar el entorno de ejecución.
 
 ### 1.1. Linux & Mac
 ```shell
-# Copiar plantillas
+# Copiar plantillas y editar los valores necesarios
 cp compose.template.yml compose.yml
 cp init.template.sql init.sql
-
-# Personalizar plantillas
-# i   -> Editar valores necesarios
-# :wq -> Guardar y salir
-# :q! -> Salir sin guardar
-vi compose.yml
-vi init.sql
 ```
 
 ### 1.2. Windows
 ```shell
-# Copiar plantillas
+# Copiar plantillas y editar los valores necesarios
 copy compose.template.yml compose.yml
 copy init.template.sql init.sql
-
-# Personalizar plantillas editando los valores necesarios
-Notepad compose.yml
-Notepad init.sql
 ```
 
 ## 2. Iniciar Servicio
