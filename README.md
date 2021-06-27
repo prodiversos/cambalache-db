@@ -54,8 +54,12 @@ Si es necesario, conectar al servicio de PostgreSQL iniciado en el paso 2 y ejec
 script **drop.sql** para revocar privilegios y eliminar el usuario y base de datos creados en el paso 3. 
 
 
-## 5. Detener Servicio
+## 5. Detener Servicio y Eliminar Datos
 Cuando sea necesario, ejecutar el siguiente comando para detener el servicio de PostgreSQL.
 ```shell
+# Detener contenedor Docker
 docker-compose -f compose.yml down
+
+# Eliminar datos
+docker volume rm cambalache-db_data
 ```
